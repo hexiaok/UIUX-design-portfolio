@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Living with Smog</title>
+</head>
+
+<body>
+
+<!-- nav -->
+<nav class="nav justify-content-center m-4">
+  <h5 style="color:#666;"><a href="index.html">JIAN HE</a></h5>
+</nav>
+
+<!-- project title -->
+<div class="container-fluid text-center"> 
+  <img class="img-fluid m-4" src="images/smog-logo.gif" alt="living with somg" width="150" height="150"> 
+  <h4>Living with Smog</h4>
+</div>
+
+<!-- jumbotron -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row">
+      <section class="col-md-8">
+        <h6 class="big">Overview</h6>
+        <p>In response to China’s severe smog situation, this project intends to generate real-time data from people's everyday experience, develop an open platform for the collection, elaboration and distribution of real-time data.</p>
+      </section>
+      <section class="col-md-2 offset-md-1">
+        <i class="fa fa-clock-o" aria-hidden="true" style="font-size:18px;color:#555;"></i>
+        <p>2014</p>
+        <i class="fa fa-tag fa-flip-horizontal" aria-hidden="true" style="font-size:18px;color:#555;"></i>
+        <p>Data Processing <br>Prototyping</p>
+      </section>  
+</div><!-- row -->
+</div><!-- container -->
+</div><!-- jumbotron -->
+
+<!-- project contents -->
+<div class="container-fluid text-center"> 
+<!-- video -->  
+  <div class="d-flex justify-content-center">
+    <div class="col-sm-6 embed-responsive embed-responsive-16by9 m-2">
+    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/147228304" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </div>
+  <p><a href="https://vimeo.com/147228304">living with smog</a></p>
+
+  <div class="d-flex justify-content-center">
+    <div class="col-sm-6 embed-responsive embed-responsive-16by9 m-2">
+    <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/147226434" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  </div>
+  <p><a href="https://vimeo.com/147226434">living with smog: working prototype</a></p>
+<!-- contents--> 
+<div class="d-flex justify-content-center">
+  <section class="col-sm-10 col-lg-8">
+    <h5 class="title">Challenge</h5>
+    <p class="content text-left">In December 2013, China suffered severe smog. Up till now, the severity has not been mitigated. In response to this situation, different administrative departments have issued their real-time data, tracking the pollution situation. However there are discrepancies among these seemingly accurate data. 
+    At the same time, the public responses to this situation in a more intuitive ways: they talk about it in everyday conversations; they share their comments and concerns through social websites; they snap and post the foggy scenes in their eyes. </p>
+    <p class="content text-left"> Therefore, this project intends to generate real-time data from people's everyday experience, develop a platform for people to share their real-time data of smog worldwide. While the project started with the issue of data discrepancies from different official agencies, the intention of this project is more to involve public to create real-time personal data rather than creating official accurate data. At its best, this platform could serve as a mediation between discrepancies of those official data in a playful way.</p>
+    <h5 class="title">Concept</h5>
+    <p class="content text-left">We use Processing to analyze the color of the sky and the transparency of air on the photos taken by people, and give it a value. This value would be input into Arduino to control a mist maker in a planting box. The mist maker would synchronize the transparency of the planting box with the transparency of urban air. The plant lives with the mist, just like an analog of people living with the smog.</p>
+    <img class="img-fluid mt-2 mb-4" src="images/smog-01.jpg" alt="Living with Smog Concept Sketch"> 
+    <h5 class="title">Data Collection &amp; Processing</h5>
+    <p class="content text-left">I was following a person on the social media website Douban who posts a photo of the sky in his place almost on a daily basis. These photos are taken with same frame and under same angle of view, thus it tells a clear story how the weather condition changed day by day. His sky photo album serves as a perfect set of real-time data input for our project. And we got the permit to use his photos and in Processing, we analyze the color of the sky of the photos and the transparency of air, and give it a value from 0-9.</p>
+    <img class="img-fluid mt-2 mb-4" src="images/smog-05.jpg" alt="Living with Smog Data Processing">  
+    <img class="img-fluid mt-2 mb-4" src="images/smog-02.jpg" alt="Living with Smog Data Collection">
+    <h5 class="title">Data Visualization &amp; Prototyping</h5>
+    <p class="content text-left">A glass container with a small plant inside is designed and built as the working prototype of this project. 
+    The value extracted from photos is input into Arduino to control a mist maker in the water tank. When the value is larger than 6, the mist maker starts to function and generate fog, making the glass box opaque thus the green plant can’t be seen clearly. The plant lives with the fog, just as people live with the smog.</p>
+    <img class="img-fluid mt-2 mb-4" src="images/smog-03.jpg" alt="Living with Smog Data Visualization"> 
+    <img class="img-fluid mt-2 mb-4" src="images/smog-04.jpg" alt="Living with Smog Prototype"> 
+    <h5 class="title">Project Scale-up</h5>
+    <p class="content text-left">Imaging each city would have several spots of observation and snapping shots, we could build a data platform online to share these data. As a result, the planting box on your desk could be connected to data from your city or a city you care about. </p>
+    <img class="img-fluid mt-2 mb-4" src="images/smog-06.jpg" alt="Living with Smog Project Scale-up">  
+    <p class="content text-left">The project encourages people to take photos to track their living environment. The photo data are processed to generate humidity to water the plants and the growth of plant is observed and photos are taken and uploaded to the same platform. The air pollution situation is represented through the growth of the plants (in fact, if the air is more polluted, the mist maker would function more, therefor the plants would receive more water and grow better). People from different cities are able to communicate through the open platform and share the air pollution information in a more intuitive, poetic and playful way.</p>
+  </section>
+</div>
+ 
+
+</div> <!-- project contents-->
+
+<hr>
+<!-- footer -->
+<footer class="footer">
+      <div class="container-fluid text-center m-4">
+        <p><a href="index.html">INDEX</a></p>
+        <span class="text-muted">&copy; 2017. All rights reserved.</span>
+      </div>
+</footer>
+
+<!-- scripts -->
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>YPIMP</title>
+</head>
+
+
+<body>
+
+<!-- nav -->
+<nav class="nav justify-content-center m-4">
+  <h5 style="color:#666;"><a href="index.html">JIAN HE</a></h5>
+</nav>
+
+<!-- project title -->
+<div class="container-fluid text-center"> 
+  <img class="img-fluid m-4" src="images/ypimp-logo.png" alt="YPIMP" width="150" height="150"> 
+  <h4>YPIMP</h4>
+</div>
+
+<!-- jumbotron -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row">
+      <section class="col-md-8">
+        <h6 class="big">Overview</h6>
+        <p>Grab users’ point to point transport experience has been hampered by inaccurate geo data such as POI (point location) or road directions. This proposal intends to build a community where Grab users can share their locally relevant knowledge, helping passengers and drivers find each other, and get to where they need to be faster.</p>
+      </section>
+      <section class="col-md-2 offset-md-1">
+        <i class="fa fa-clock-o" aria-hidden="true" style="font-size:18px;color:#555;"></i>
+        <p>2017</p>
+        <i class="fa fa-tag fa-flip-horizontal" aria-hidden="true" style="font-size:18px;color:#555;"></i>
+        <p>UI/UX <br>Hackathon</p>
+      </section>  
+</div><!-- row -->
+</div><!-- container -->
+</div><!-- jumbotron -->
+
+<!-- project contents -->
+
+<!-- project contents -->
+<div class="container-fluid text-center"> 
+  <div class="d-flex justify-content-center">
+  <section class="col-sm-10 col-lg-8">
+    <h5 class="title">Challenge</h5>
+    <p class="content text-left">Rapid Southeast Asia development leading to a very dynamic urban landscape with changing location and road information. Geo data problems become acute as the quality of data drive for multiple aspects of Grab passengers and drivers’ experience, such as waiting time and travel time. At the same time, Grab passengers have the most up to date and locally relevant knowledge.</p> 
+    <p class="content text-left">Data shows: 33% of the drivers rate trip feedback is about incorrect pickup point; 33% of the rides are cancelled due to inaccurate pickup location; 50% of the travel time is either under-estimated or over-estimated due to insufficient geo information. </p>
+    <img class="img-fluid mt-2 mb-4" src="images/ypimp-data.jpg" alt="ypimp-data"> 
+    <h5 class="title">Hypothesis</h5>
+    <p class="content text-left"><i><b>Given the fact it affects daily earnings and commute of the passengers and drivers, could we build a community of geo data sharing and contribution, where Grab users can edit and correct the data directly?</b></i></p>
+    <p class="content text-left">Based on the historical data of error score and user’s feedback, the system will send the correction link to the users to verify; users edit and correct the information in the app; after, the system will automate the correction based on the information collected.</p>
+    <img class="img-fluid mt-2 mb-4" src="images/ypimp-flow.jpg" alt="ypimp-flow"> 
+    <p class="content text-left">In this 24-hour Hackathon, we tested out two approaches of the data correction, one of POI (point location), the other is one-way road direction.</p>
+ 
+    <div class="row mt-2 mb-4">
+      <section class="col-lg-5 mt-5">
+      <h5 class="title">Driver to Update POI</h5>
+      <p class="content text-left">At the end of the trip, when driver giving feedback about incorrect pick-up point, a link is offered for him to update the location. Driver can drag the map to position the marker.</p>
+      </section>
+      <section class="col-lg-5 push-lg-2">
+      <img class="img-fluid" src="images/ypimp-dax-poi.gif" alt="ypimp-dax-poi" width="400" height="710"> 
+      </section>
+    </div>
+    <div class="row mt-2 mb-4">
+      <section class="col-lg-5 push-lg-7 mt-5">
+      <h5 class="title">Passenger to Update POI</h5>
+      <p class="content text-left">A verification link is sent to passenger to verify the location of the trip that he has taken. He can tap to choose the correct POI: one is from the existing system; the other is corrected by driver taking the same trip.</p>
+      </section>
+      <section class="col-lg-5 pull-lg-5">
+      <img class="img-fluid" src="images/ypimp-pax-poi.gif" alt="ypimp-pax-poi" width="400" height="710"> 
+      </section>
+    </div>   
+    <div class="row mt-2 mb-4">
+      <section class="col-lg-5 mt-5">
+      <h5 class="title">Verify One-way Road</h5>
+      <p class="content text-left">We use JOSM to analyse the road direction, and send drivers to verify. Driver can swipe left or right to choose the correct one.</p>
+      </section>
+      <section class="col-lg-5 push-lg-2">
+      <img class="img-fluid" src="images/ypimp-swipe.gif" alt="ypimp-swipe" width="400" height="710"> 
+      </section>
+    </div>
+    <h5 class="title">Correction - Automation</h5>
+    <p class="content text-left">After collection feedback from both passengers and drivers: if there is enough data with clean POI cluster, the system will automate the correction; If there is enough data however with unclean POI cluster, the system will flag to the map operators to further investigate; If there’s not enough data, the system will continue sending verification link to passengers and drivers.</p> 
+
+  </section>
+</div>
+</div>
+  
+<hr>
+<!-- footer -->
+<footer class="footer">
+      <div class="container-fluid text-center m-4">
+        <p><a href="index.html">Index</a></p>
+        <span class="text-muted">&copy; 2017. All rights reserved.</span>
+      </div>
+</footer>
+
+<!-- scripts -->
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
