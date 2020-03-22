@@ -1,2 +1,2 @@
-# UIUX-design-portfolio
-UIUX design portfolio
+# personal website
+
