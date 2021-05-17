@@ -1,2 +1,2 @@
-# personal website using bootstrap 
+Exercise: build personal website using bootstrap 
 
