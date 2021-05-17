@@ -1,2 +1,2 @@
-# personal website
+# Build personal website using bootstrap
 
